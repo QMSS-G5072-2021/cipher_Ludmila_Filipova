@@ -1,0 +1,41 @@
+:py:mod:`src.cipher_lf2719`
+===========================
+
+.. py:module:: src.cipher_lf2719
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   src.cipher_lf2719.cipher
+
+
+
+.. py:function:: cipher(text, shift, encrypt=True)
+
+   Takes user's text input and encrypts it by shifting the letters by defined shift.
+
+   :param text: TEXT pandas character string.
+   :type text: pandas.Series.str
+   :param shift: SHIFT numpy integer that defines by how much will the letter shift from their position in the alphabet.
+   :type shift: numpy.int64
+
+   :returns: Encrypted string is pandas string.
+   :rtype: pandas.Series.str
+
+   .. rubric:: Examples
+
+   >>> from cipher_lf2719 import cipher_lf2719
+   >>> text = "hello world"
+   >>> shift = 5
+   >>> cipher("hello world", 5)
+
+   'mjqqt Btwqi'
+
+
